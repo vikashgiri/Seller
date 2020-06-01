@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/list"
+    android:background="@color/white"
+
+    android:orientation="vertical"
+   android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <include layout="@layout/toolbar_dashboard"
+        android:id="@+id/toolbar">
+
+    </include>
+    <RelativeLayout
+        android:layout_below="@+id/toolbar"
+android:padding="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:textSize="@dimen/sp_18"
+    android:textStyle="bold"
+    android:textColor="@color/dark_gray"
+    android:layout_height="wrap_content"
+    android:text="@string/payment_status">
+
+</TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/sp_18"
+            android:textStyle="bold"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/dark_gray"
+            android:layout_height="wrap_content"
+            android:text="@string/count">
+
+        </TextView>
+    </RelativeLayout>
+<View
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_1"></View>
+    <RelativeLayout
+        android:layout_margin="@dimen/dp_10"
+        android:layout_below="@+id/toolbar"
+        android:background="@drawable/ic_rectangle_gray_cornor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/sp_14"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_centerVertical="true"
+            android:textColor="@color/dark_gray"
+            android:layout_height="wrap_content"
+            android:text="@string/payment_completed">
+
+        </TextView>
+
+        <Button
+            android:id="@+id/complited"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ic_button_background"
+            android:text="100"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_14"
+            android:textStyle="bold">
+
+        </Button>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_margin="@dimen/dp_10"
+        android:background="@drawable/ic_rectangle_gray_cornor"
+
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/sp_14"
+            android:layout_centerVertical="true"
+android:layout_marginLeft="@dimen/dp_10"
+            android:textColor="@color/dark_gray"
+            android:layout_height="wrap_content"
+            android:text="@string/payment_pending">
+
+        </TextView>
+
+        <Button
+            android:background="@drawable/ic_button_background"
+            android:id="@+id/pending"
+            android:layout_width="70dp"
+            android:textSize="@dimen/sp_14"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/white"
+            android:layout_height="30dp"
+            android:text="20">
+
+        </Button>
+    </RelativeLayout>
+</LinearLayout>
+</layout>

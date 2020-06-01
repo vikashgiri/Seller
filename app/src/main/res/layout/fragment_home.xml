@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".HomeFragment">
+<include
+    android:id="@+id/toolbar"
+    layout="@layout/toolbar_home">
+
+</include>
+    <LinearLayout
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/txt_name"
+        android:paddingLeft="@dimen/dp_20"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="90dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24sp"
+            android:text="Welcome Back,"
+            android:layout_height="wrap_content">
+
+        </TextView>
+  <TextView
+      android:text="Deepak"
+      android:textSize="22sp"
+      android:layout_gravity="center_vertical"
+android:textColor="@color/dark_gray"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content">
+
+  </TextView>
+    </LinearLayout>
+<View
+    android:layout_below="@+id/txt_name"
+    android:id="@+id/view"
+    android:background="@color/dark_gray"
+
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_1">
+
+</View>
+    <TextView
+        android:id="@+id/textView"
+        android:layout_margin="@dimen/dp_10"
+        android:layout_below="@+id/view"
+        android:textSize="@dimen/sp_18"
+        android:textStyle="bold"
+android:paddingLeft="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:text="@string/pending_action"
+        android:layout_height="wrap_content">
+
+    </TextView>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_below="@+id/textView"
+            android:layout_width="match_parent"
+app:reverseLayout="true"
+            android:layout_height="wrap_content" />
+
+
+
+
+    <View
+        android:layout_below="@+id/recyclerView"
+        android:id="@+id/view1"
+        android:layout_marginTop="@dimen/dp_30"
+        android:background="@color/dark_gray"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1">
+
+    </View>
+<LinearLayout
+    android:layout_below="@+id/view1"
+    android:layout_width="match_parent"
+    android:weightSum="2"
+    android:layout_marginTop="@dimen/dp_10"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/dp_20"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_height="0dp">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/dp_10"
+
+            android:gravity="center"
+            android:background="@drawable/ic_rectangle_corner_round"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:drawableTop="@drawable/ic_bidlive"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="@string/live_bid"
+                android:textSize="@dimen/sp_14"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+
+                android:layout_height="wrap_content"
+
+                > </TextView>
+        </RelativeLayout>
+<RelativeLayout
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:gravity="center"
+    android:layout_margin="@dimen/dp_10"
+    android:background="@drawable/ic_rectangle_corner_round"
+    android:layout_height="match_parent">
+
+      <TextView
+            android:id="@+id/order_statics"
+     android:drawableTop="@drawable/ic_product_service"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="@string/product_service"
+            android:textSize="@dimen/sp_14"
+          android:textStyle="bold"
+android:textColor="@color/colorPrimary"
+            android:layout_height="wrap_content"
+
+            > </TextView>
+</RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="1"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/dp_10"
+
+            android:gravity="center"
+            android:background="@drawable/ic_rectangle_corner_round"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:drawableTop="@drawable/ic_product_pending"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="@string/product_pending"
+                android:textSize="@dimen/sp_14"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+
+                android:layout_height="wrap_content"
+
+                > </TextView>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/incident"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/dp_10"
+
+            android:gravity="center"
+            android:background="@drawable/ic_rectangle_corner_round"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:drawableTop="@drawable/ic_incident"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="@string/incident"
+                android:textSize="@dimen/sp_14"
+android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+
+                android:layout_height="wrap_content"
+
+                > </TextView>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
+</RelativeLayout>
+</layout>

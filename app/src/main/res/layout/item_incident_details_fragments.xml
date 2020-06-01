@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:name="gem.in.seller.PaymentStatisticsFragment2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:background="@drawable/ic_rectangle_gray_cornor"
+    android:layout_margin="@dimen/dp_10"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/bid_id"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:padding="@dimen/dp_10"
+        android:layout_height="wrap_content"
+        android:textColor="@color/blue"
+        android:text="Incident Id: GEM/2020/B/65228"
+        ></TextView>
+
+    <View
+        android:layout_below="@+id/bid_id"
+        android:id="@+id/views"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/dark_gray"
+        ></View>
+    <LinearLayout
+        android:layout_marginTop="@dimen/dp_5"
+        android:padding="@dimen/dp_5"
+
+        android:layout_below="@+id/views"
+        android:id="@+id/lin1"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_weight="1.5"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_12"
+                    android:text="@string/severity">
+
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="@dimen/sp_12"
+                    android:layout_height="wrap_content"
+                    android:text=" Serious"></TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textStyle="bold"
+                    android:textSize="@dimen/sp_12"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/invoice_no">
+
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="@dimen/sp_12"
+                    android:layout_height="wrap_content"
+                    android:text=" GEM123456"></TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="@dimen/sp_12"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:text="@string/scn">
+
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="@dimen/sp_12"
+                    android:layout_height="wrap_content"
+                    android:text=" No."></TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="0.5"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_12"
+                    android:text="@string/order_no">
+
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="@dimen/sp_12"
+                    android:layout_height="wrap_content"
+                    android:text=" GEM12345"></TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_12"
+                    android:text="@string/raised_against">
+
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="@dimen/sp_12"
+                    android:layout_height="wrap_content"
+                    android:text=" 4"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_12"
+                    android:text="@string/status">
+
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="@dimen/sp_12"
+                    android:layout_height="wrap_content"
+                    android:text=" Closed">
+
+                </TextView>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
+</RelativeLayout>

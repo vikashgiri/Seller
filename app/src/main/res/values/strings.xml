@@ -1,0 +1,97 @@
+<resources>
+    <string name="app_name">Seller</string>
+    <string name="user_id">User Id</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="login">LOGIN</string>
+    <string name="home">Home</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="market">Market</string>
+    <string name="bid">Bid/Ra</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="delivery">Delivery</string>
+    <string name="reliability">Reliability</string>
+    <string name="quality">Quality</string>
+    <string name="coverage">Coverage</string>
+    <string name="more">More</string>
+    <string name="order">Order</string>
+    <string name="order_history">Order \nHistory</string>
+    <string name="signup">Sign Up</string>
+    <string name="total_order_value">Total order \nvalue</string>
+    <string name="total_order_values">Total order \nvalue:</string>
+    <string name="total_order_volume">Total order \nvolume</string>
+    <string name="payment_statistics">Payment \nStatistics</string>
+    <string name="order_statistics">Order \nStatistics</string>
+    <string name="order_statistic">Order Statistics</string>
+    <string name="order_availability_apcatance">Order \nawaiting\n Acceptance</string>
+
+    <string name="item_s">Item(s):</string>
+    <string name="department_name_and_address">Department Name And Address:</string>
+    <string name="start_date">Start Date:</string>
+    <string name="end_date">End Date:</string>
+    <string name="technical_bid">Technical \nBid</string>
+    <string name="upload_documents">Upload\n Documents</string>
+    <string name="bid_start">Bid Stats</string>
+    <string name="offer_price">Offer\n Price</string>
+    <string name="emd_nepbg"><![CDATA[EMD & \nEPBG]]></string>
+    <string name="verify_esign"><![CDATA[verify & \nesign]]></string>
+    <string name="order_and_payments">Order and Payment</string>
+    <string name="pending_action">Pending Actions</string>
+    <string name="product_service">Product \nService</string>
+    <string name="product_pending">Product\n Pending</string>
+    <string name="incident">Incident</string>
+    <string name="live_bid">Live Bid</string>
+    <string name="participated">Participated</string>
+    <string name="bid_ra_status">Bid/RA status</string>
+    <string name="payment_status">Payment Status</string>
+    <string name="payment_completed">Payment Completed</string>
+    <string name="payment_pending">Payment pending</string>
+    <string name="count">Count</string>
+    <string name="bill_number">Bill Number:</string>
+    <string name="mode_of_payment">Mode of payment:</string>
+    <string name="payment_date">Payment Date</string>
+    <string name="order_date">Order Date: </string>
+    <string name="invoice_no">Invoice No: </string>
+    <string name="buyer_name">Buyer Name: </string>
+\
+    <!-- TODO: Remove or change this placeholder text -->
+\    <string name="incident_status">Incident Status</string>
+    <string name="escalated_gem">Escalated Gem</string>
+    <string name="open">Open</string>
+    <string name="severity">Severity:</string>
+    <string name="scn">SCN:</string>
+    <string name="order_no">Order No.:</string>
+    <string name="raised_against">Raised Againt: </string>
+    <string name="raised_againsts">Raised Againt*</string>
+    <string name="status">Status:</string>
+    <string name="contract_no_order_no">Contract No/Order No*</string>
+    <string name="to_choose_contact_from_earlier_version_please_click_here">To choose contact from earlier version please
+        <a href='"+ click here +"'>"+ mobileUrl +"</a>
+
+        </string>
+    <string name="reason">Reason*</string>
+    <string name="descriptions">Descriptions(Max 500 character)</string>
+    <string name="reset">Reset</string>
+    <string name="submit">Submit</string>
+    <string name="please_enter_description_max_500_character">Please enter description(Max 500 character)</string>
+    <string name="create_new_incident">Create New Incident</string>
+    <string name="amount">Amount: </string>
+    <string name="crac_no">CRAC No: </string>
+    <string name="crac_date">CRAC Date: </string>
+    <string name="bill_creation_date">Bill Creation Date: </string>
+    <string name="seller">Seller</string>
+    <string name="buyer">Buyer</string>
+    <string name="delivery_in_progress">Delivery In-Progress</string>
+    <string name="order_accepted">Order Accepted</string>
+    <string name="order_cancelled">Order Cancelled</string>
+    <string name="order_completed">Order Completed</string>
+    <string name="order_paid">Order Paid</string>
+    <string name="order_rejected_by_seller">Order Rejected By Seller</string>
+    <string name="order_status">Order Status</string>
+    <string name="contact_date">Contract Date:</string>
+    <string name="item_name">Item Name:</string>
+    <string name="order_quantity">Order Quantity:</string>
+    <string name="product_type">Product Type:</string>
+    <string name="buyer_mode">Buyer Mode:</string>
+    <string name="buyer_department">Buyer Department:</string>
+</resources>

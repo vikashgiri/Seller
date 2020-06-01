@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context=".MoreFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <include
+        android:id="@+id/include"
+      layout="@layout/toolbar_more"
+        />
+<TextView
+    android:id="@+id/gem_advantage"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+android:padding="@dimen/dp_15"
+    android:textSize="@dimen/sp_18"
+
+    android:textColor="@color/dark_gray"
+    android:text="Gem Advantges"></TextView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginRight="@dimen/dp_15"
+
+        android:background="@color/light_gray"
+
+        ></View>
+<TextView
+    android:id="@+id/gem_exclusive"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+android:padding="@dimen/dp_15"
+    android:textColor="@color/dark_gray"
+    android:textSize="@dimen/sp_18"
+    android:text="Gem Exclusive"></TextView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_gray"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginRight="@dimen/dp_15"
+
+        ></View>
+<TextView
+    android:id="@+id/faq"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+android:padding="@dimen/dp_15"
+    android:textSize="@dimen/sp_18"
+    android:textColor="@color/dark_gray"
+    android:text="FAQs"></TextView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_gray"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginRight="@dimen/dp_15"
+
+        ></View>
+<TextView
+    android:id="@+id/contact_us"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+android:padding="@dimen/dp_15"
+    android:textSize="@dimen/sp_18"
+    android:textColor="@color/dark_gray"
+    android:text="Contact Us"></TextView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_gray"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginRight="@dimen/dp_15"
+        ></View><TextView
+    android:id="@+id/rate_on_seller"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+android:padding="@dimen/dp_15"
+    android:textColor="@color/dark_gray"
+    android:textSize="@dimen/sp_18"
+    android:text="Rate on Seller"></TextView>
+
+</LinearLayout>
+</layout>

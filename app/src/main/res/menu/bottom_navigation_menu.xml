@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:enabled="true"
+        android:icon="@drawable/ic_home"
+        android:title="@string/home"/>
+    <item
+        android:id="@+id/order"
+        android:enabled="true"
+        android:icon="@drawable/ic_order"
+        android:title="@string/order"/>
+    <item
+        android:id="@+id/market"
+        android:enabled="true"
+        android:icon="@drawable/ic_market"
+        android:title="@string/market"/>
+    <item
+        android:id="@+id/bid"
+        android:enabled="true"
+        android:icon="@drawable/ic_bid"
+        android:title="@string/bid"/>
+
+    <item
+        android:id="@+id/more"
+        android:enabled="true"
+        android:icon="@drawable/ic_more"
+        android:title="@string/more"/>
+</menu>
