@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_below="@+id/lin1"
+        android:layout_width="match_parent"
+        android:background="@drawable/ic_rectangle_gray_cornor"
+        android:layout_margin="@dimen/dp_10"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:padding="@dimen/dp_10"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue"
+            android:text="@string/list_of_seller_participated" />
+        <TextView
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:padding="@dimen/dp_10"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_status_color"
+            android:text="Status:Qualified" />
+        <View
+            android:layout_below="@+id/text1"
+            android:id="@+id/views"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/dark_gray"
+            ></View>
+        <LinearLayout
+            android:layout_marginTop="@dimen/dp_5"
+            android:padding="@dimen/dp_5"
+
+            android:layout_below="@+id/views"
+            android:id="@+id/lin1"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_weight="1.3"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/seller_name"
+                        android:textSize="@dimen/sp_12"
+                        android:textStyle="bold">
+
+                    </TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textSize="@dimen/sp_12"
+                        android:layout_height="wrap_content"
+                        android:text=" Aman Kumar"></TextView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textStyle="bold"
+                        android:textSize="@dimen/sp_12"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/participated_on">
+
+                    </TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textSize="@dimen/sp_12"
+                        android:layout_height="wrap_content"
+                        android:text=" 20-10-2020 18:30:00"></TextView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textStyle="bold"
+                        android:textSize="@dimen/sp_12"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/offered_item">
+
+                    </TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/sp_12"
+                        android:text=" Make Apple"></TextView>
+                </LinearLayout>
+                <LinearLayout
+
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/sp_12"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mse_mii_status">
+
+                    </TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textSize="@dimen/sp_12"
+                        android:layout_height="wrap_content"
+                        android:text=" N/A"></TextView>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/ic_rectangle_gray_cornor"
+        android:layout_margin="@dimen/dp_10"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/bid_id"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+android:padding="@dimen/dp_10"
+        android:layout_height="wrap_content"
+        android:textColor="@color/blue"
+        android:text="BID: GEM/2020/B/65228"
+        ></TextView>
+<TextView
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+android:padding="@dimen/dp_10"
+    android:layout_alignParentRight="true"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_status_color"
+        android:text="Status: Evaluated"
+        ></TextView>
+
+        <View
+            android:layout_below="@+id/bid_id"
+            android:id="@+id/views"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/dark_gray"
+            ></View>
+    <LinearLayout
+        android:layout_marginTop="@dimen/dp_5"
+        android:padding="@dimen/dp_5"
+
+        android:layout_below="@+id/views"
+        android:id="@+id/lin1"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+<LinearLayout
+    android:layout_weight="1.5"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_12"
+            android:text="@string/item_s">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/sp_12"
+            android:layout_height="wrap_content"
+            android:text="NoteBook Computers"></TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textStyle="bold"
+            android:textSize="@dimen/sp_12"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quantity Required:">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/sp_12"
+            android:layout_height="wrap_content"
+            android:text="100"></TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/sp_12"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:text="@string/department_name_and_address">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/sp_12"
+            android:layout_height="wrap_content"
+            android:text="Ministary of coal\n Na shastri bhawan New Delhi"></TextView>
+    </LinearLayout>
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="0.5"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textStyle="bold"
+            android:textSize="@dimen/sp_12"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/start_date">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_12"
+            android:text="30-04-2020 01:20PM"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:textSize="@dimen/sp_12"
+android:layout_marginTop="@dimen/dp_10"
+            android:layout_height="wrap_content"
+            android:text="@string/end_date">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/sp_12"
+            android:layout_height="wrap_content"
+            android:text="31-04-2020 01:20PM"></TextView>
+    </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_below="@+id/lin1"
+        android:layout_width="match_parent"
+        android:weightSum="4"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_weight="1"
+android:orientation="horizontal"
+            android:layout_gravity="center"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/technical_bid_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+>            <View
+                android:id="@+id/technical_bid_view_circle"
+                android:layout_width="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_circle_gray"
+                android:layout_centerInParent="true"
+                android:layout_height="20dp">
+
+        </View>
+
+                <View
+                    android:layout_toRightOf="@+id/technical_bid_view_circle"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_centerVertical="true"
+                    android:background="@color/dark_gray">
+
+                </View>
+            </RelativeLayout>
+            <TextView
+
+    android:gravity="center"
+    android:layout_below="@+id/technical_bid_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_12"
+
+    android:text="@string/technical_nevaluation">
+
+</TextView>
+    </RelativeLayout>
+        <RelativeLayout
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/upload_document_view"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <View
+
+                android:layout_width="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_circle_gray"
+                android:layout_centerInParent="true"
+                android:layout_height="20dp">
+
+            </View>
+                <View
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:background="@color/dark_gray"
+                    android:layout_height="1dp">
+
+                </View>
+
+            </RelativeLayout>
+            <TextView
+
+                android:gravity="center"
+                android:layout_below="@+id/upload_document_view"
+                android:layout_width="match_parent"
+                android:textSize="@dimen/sp_12"
+
+                android:layout_height="wrap_content"
+                android:text="@string/financial_nevaluation">
+
+            </TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/verfy_view"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <View
+                    android:layout_toLeftOf="@+id/view"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:background="@color/dark_gray"
+                    android:layout_height="1dp">
+
+                </View>
+                <View
+                    android:id="@+id/view"
+                   android:layout_width="20dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_circle_gray"
+                    android:layout_centerInParent="true"
+                    android:layout_height="20dp">
+
+                </View>
+              </RelativeLayout>
+
+            <TextView
+                android:gravity="center"
+                android:textSize="@dimen/sp_12"
+
+                android:layout_below="@+id/verfy_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/bid_naward">
+            </TextView>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/viewButton"
+                android:gravity="center"
+                android:padding="@dimen/dp_5"
+                android:textSize="@dimen/sp_12"
+                android:layout_marginRight="@dimen/dp_5"
+android:background="@drawable/ic_background_blue"
+
+                android:layout_width="match_parent"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:text="Bid Result">
+            </TextView>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>
+</RelativeLayout>

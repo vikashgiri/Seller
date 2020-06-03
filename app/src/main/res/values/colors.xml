@@ -10,4 +10,5 @@
     <color name="yellow">#FFD300</color>
     <color name="blue">#0c7daf</color>
     <color name="black">#000000</color>
+    <color name="text_status_color">#82B18D</color>
 </resources>

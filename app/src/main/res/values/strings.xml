@@ -28,7 +28,9 @@
     <string name="item_s">Item(s):</string>
     <string name="department_name_and_address">Department Name And Address:</string>
     <string name="start_date">Start Date:</string>
+    <string name="start_date_time">Bid Start Date:</string>
     <string name="end_date">End Date:</string>
+    <string name="end_date_time">Bid End Date:</string>
     <string name="technical_bid">Technical \nBid</string>
     <string name="upload_documents">Upload\n Documents</string>
     <string name="bid_start">Bid Stats</string>
@@ -53,9 +55,10 @@
     <string name="order_date">Order Date: </string>
     <string name="invoice_no">Invoice No: </string>
     <string name="buyer_name">Buyer Name: </string>
-\
+    \
     <!-- TODO: Remove or change this placeholder text -->
-\    <string name="incident_status">Incident Status</string>
+    \
+    <string name="incident_status">Incident Status</string>
     <string name="escalated_gem">Escalated Gem</string>
     <string name="open">Open</string>
     <string name="severity">Severity:</string>
@@ -94,4 +97,33 @@
     <string name="product_type">Product Type:</string>
     <string name="buyer_mode">Buyer Mode:</string>
     <string name="buyer_department">Buyer Department:</string>
+    <string name="technical_nevaluation">Technical \nEvaluation</string>
+    <string name="financial_nevaluation">Financial \nEvaluation</string>
+    <string name="bid_naward">Bid \nAward</string>
+    <string name="bid_status">Bid Status:</string>
+    <string name="quantity">Quantity:</string>
+    <string name="bid_lifecycle_from_publish_date">Bid Lifecycle(From Publish Date):</string>
+    <string name="bid_validity_from_end_date">Bid Validity(From End Date):</string>
+    <string name="consignees_reporting_officer_delivery_location_s">Consignees/Reporting Officer/Delivery Location(S)</string>
+    <string name="bid_opening_date_time">Opening Date/Time</string>
+    <string name="buyer_details">Buyer Details</string>
+    <string name="name">Name:</string>
+    <string name="address">Address:</string>
+    <string name="organisation">Organisation:</string>
+    <string name="state">State:</string>
+    <string name="department">Department:</string>
+    <string name="officer">Officer:</string>
+    <string name="list_of_seller_participated">List of seller participated</string>
+    <string name="seller_name">Seller Name:</string>
+    <string name="participated_on">Participated on:</string>
+    <string name="offered_item">Offered Item:</string>
+    <string name="mse_mii_status">MSE/MII Status:</string>
+    <string name="list_of_seller_qualified_financial">List of seller Qualified Financial</string>
+    <string name="total_price">Total Price:</string>
+    <string name="awarded">Awarded:</string>
+    <string name="details">Details:</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="bid_result">BID Results</string>
 </resources>

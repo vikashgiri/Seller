@@ -157,10 +157,10 @@ android:layout_alignParentRight="true"
         android:layout_marginBottom="@dimen/dp_40"
         android:layout_marginRight="@dimen/dp_20"
 android:layout_alignParentBottom="true"
-        android:scaleType="center"
+        android:scaleType="fitXY"
         app:fabSize="normal"
-
-        android:src="@android:drawable/ic_input_add"
+        app:maxImageSize="46dp"
+        android:src="@drawable/ic_add_white"
         android:tint="@android:color/white" />
 </RelativeLayout>
 </layout>
