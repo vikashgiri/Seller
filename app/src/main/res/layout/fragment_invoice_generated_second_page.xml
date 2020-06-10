@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout
+    android:background="@color/white"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/rel1"
+        android:layout_below="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/productImage"
+            android:layout_width="@dimen/dp_60"
+            android:layout_margin="@dimen/dp_10"
+            android:scaleType="fitXY"
+            android:layout_height="@dimen/dp_60"
+            android:src="@drawable/banner1"></ImageView>
+    <TextView
+        android:id="@+id/productName"
+        android:textStyle="bold"
+        android:textSize="@dimen/sp_14"
+        android:layout_centerVertical="true"
+        android:text="Hp 1012 middle Laptop to user"
+        android:layout_toRightOf="@+id/productImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+        <TextView
+            android:textSize="@dimen/sp_12"
+            android:layout_marginTop="@dimen/dp_8"
+            android:layout_marginRight="@dimen/dp_10"
+            android:background="@drawable/ic_rectangle_border"
+        android:layout_alignParentRight="true"
+        android:text="Pending item to ship 1,000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        </TextView>
+        <View
+            android:id="@+id/view1"
+            android:layout_marginTop="@dimen/dp_5"
+            android:background="@color/dark_gray"
+            android:layout_below="@+id/productImage"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_05">
+
+        </View>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:background="@drawable/ic_rectangle_border"
+        android:layout_margin="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_marginTop="@dimen/dp_05"
+        android:layout_below="@+id/rel1"
+        android:weightSum="3"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:layout_height="wrap_content">
+    <EditText
+        android:hint="@string/supplied_qty"
+        android:textSize="@dimen/sp_14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </EditText>
+
+</com.google.android.material.textfield.TextInputLayout>
+
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:layout_height="wrap_content">
+    <EditText
+        android:hint="@string/cgst"
+        android:textSize="@dimen/sp_14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </EditText>
+
+</com.google.android.material.textfield.TextInputLayout>
+
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:layout_height="wrap_content">
+    <EditText
+        android:hint="@string/sgst_igst_utgst"
+        android:textSize="@dimen/sp_14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </EditText>
+
+</com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="@dimen/dp_05"
+        android:layout_below="@+id/rel1"
+        android:weightSum="3"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:layout_height="wrap_content">
+    <EditText
+        android:hint="@string/sgst"
+        android:textSize="@dimen/sp_14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </EditText>
+
+</com.google.android.material.textfield.TextInputLayout>
+
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:layout_height="wrap_content">
+    <EditText
+        android:hint="@string/igst"
+        android:textSize="@dimen/sp_14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </EditText>
+
+</com.google.android.material.textfield.TextInputLayout>
+
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:layout_height="wrap_content">
+    <EditText
+        android:hint="@string/utgst"
+        android:textSize="@dimen/sp_14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </EditText>
+</com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="@dimen/dp_05"
+        android:layout_below="@+id/rel1"
+        android:weightSum="3"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:layout_height="wrap_content">
+    <EditText
+        android:hint="@string/gst"
+        android:textSize="@dimen/sp_14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </EditText>
+</com.google.android.material.textfield.TextInputLayout>
+
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:layout_height="wrap_content">
+    <EditText
+        android:hint="@string/cess"
+        android:textSize="@dimen/sp_14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </EditText>
+
+</com.google.android.material.textfield.TextInputLayout>
+
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_width="0dp"
+    android:visibility="invisible"
+    android:layout_weight="1"
+    android:layout_height="wrap_content">
+    <EditText
+        android:hint="@string/supplied_qty"
+        android:textSize="@dimen/sp_14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </EditText>
+
+</com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="@dimen/dp_05"
+        android:layout_below="@+id/rel1"
+        android:weightSum="3"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:layout_height="wrap_content">
+    <EditText
+        android:hint="@string/freight"
+        android:textSize="@dimen/sp_14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </EditText>
+
+</com.google.android.material.textfield.TextInputLayout>
+
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:layout_height="wrap_content">
+    <EditText
+        android:hint="@string/freight_cgst"
+        android:textSize="@dimen/sp_14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </EditText>
+
+</com.google.android.material.textfield.TextInputLayout>
+
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:layout_height="wrap_content">
+    <EditText
+        android:hint="@string/freight_sgst_igst_utgst"
+        android:textSize="@dimen/sp_14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </EditText>
+
+</com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="@dimen/dp_05"
+        android:layout_below="@+id/rel1"
+        android:weightSum="3"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:layout_height="wrap_content">
+    <EditText
+        android:hint="@string/freight_sgst"
+        android:textSize="@dimen/sp_14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </EditText>
+
+</com.google.android.material.textfield.TextInputLayout>
+
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:layout_height="wrap_content">
+    <EditText
+        android:hint="@string/freight_igst"
+        android:textSize="@dimen/sp_14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </EditText>
+
+</com.google.android.material.textfield.TextInputLayout>
+
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:layout_height="wrap_content">
+    <EditText
+        android:hint="@string/freight_utgst"
+        android:textSize="@dimen/sp_14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </EditText>
+
+</com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="@dimen/dp_05"
+        android:layout_below="@+id/rel1"
+        android:weightSum="3"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:layout_height="wrap_content">
+    <EditText
+        android:hint="@string/freight_gst"
+        android:textSize="@dimen/sp_14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </EditText>
+
+</com.google.android.material.textfield.TextInputLayout>
+
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:layout_height="wrap_content">
+    <EditText
+        android:hint="@string/freight_cess"
+        android:textSize="@dimen/sp_14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </EditText>
+
+</com.google.android.material.textfield.TextInputLayout>
+
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:visibility="invisible"
+    android:layout_height="wrap_content">
+    <EditText
+        android:hint="@string/supplied_qty"
+        android:textSize="@dimen/sp_14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </EditText>
+
+</com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_height="@dimen/dp_05"
+        android:background="@color/dark_gray"></View>
+    <RelativeLayout
+        android:layout_marginTop="@dimen/dp_10"
+        android:padding="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:textStyle="bold"
+        android:hint="Total:10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+        <TextView
+            android:textStyle="bold"
+
+            android:layout_alignParentRight="true"
+            android:hint="Total Freight:2443"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+    </RelativeLayout>
+    <View
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_05"
+        android:background="@color/dark_gray">
+
+    </View>
+    <TextView
+        android:textStyle="bold"
+
+        android:layout_marginTop="@dimen/dp_10"
+    android:id="@+id/invoice_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/sp_18"
+        android:padding="@dimen/dp_5"
+        android:text="Total invoice Value:10">
+
+    </TextView>
+    <View
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_05"
+        android:background="@color/dark_gray">
+
+    </View>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/dp_10"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/preview"
+            android:layout_width="wrap_content"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_5"
+            android:paddingBottom="@dimen/dp_5"
+
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ic_button_background"
+
+            android:text="@string/preview"
+            android:textColor="@color/white">
+
+        </TextView>
+        <TextView
+        android:layout_marginRight="@dimen/dp_10"
+            android:layout_toLeftOf="@+id/preview"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_5"
+            android:paddingBottom="@dimen/dp_5"            android:background="@drawable/ic_button_gray"
+            android:text="@string/cancel"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+    </RelativeLayout></LinearLayout>
+</layout>

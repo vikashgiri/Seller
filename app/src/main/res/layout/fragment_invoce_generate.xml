@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <RelativeLayout
+        android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+<include android:id="@+id/toolbar"
+    layout="@layout/toolbar_dashboard">
+
+</include>
+        <androidx.core.widget.NestedScrollView
+            android:layout_below="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent">
+<TextView
+    android:id="@+id/header"
+    android:layout_width="match_parent"
+    android:textStyle="bold"
+    android:textSize="@dimen/sp_14"
+    android:textColor="@color/colorPrimary"
+    android:padding="@dimen/dp_10"
+    android:text="@string/invoice_details"
+    android:layout_height="wrap_content">
+
+</TextView>
+    <View
+        android:id="@+id/view"
+        android:layout_below="@+id/header"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_2"
+        ></View>
+    <TextView
+        android:id="@+id/text"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_below="@+id/view"
+        android:textStyle="bold"
+        android:layout_marginLeft="@dimen/dp_10"
+
+        android:text="@string/upload_gst_ta_invoice_document"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ></TextView>
+    <TextView
+android:id="@+id/text2"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_below="@+id/text"
+        android:text="@string/please_attach_the_same_tax_invoice_as_uploaded_with_gst_authority_also_ensure_that_fields_entered_while_creating_gem_invoice_matched_with_attached_document_if_the_deatails_and_document_do_not_match_your_invoice_will_get_rejected"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ></TextView>
+<TextView
+    android:id="@+id/upload_document"
+    android:layout_below="@+id/text2"
+    android:layout_alignParentRight="true"
+    android:layout_marginRight="@dimen/dp_10"
+    android:text="Upload"
+    android:paddingLeft="@dimen/dp_10"
+    android:paddingRight="@dimen/dp_10"
+    android:paddingTop="@dimen/dp_5"
+    android:paddingBottom="@dimen/dp_5"
+    android:background="@drawable/ic_button_background"
+    android:textColor="@color/white"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+</TextView>
+
+    <TextView
+        android:id="@+id/text4"
+        android:layout_below="@+id/upload_document"
+        android:text="Supported File Format PDF(Max Size 5MB)"
+        android:padding="@dimen/dp_5"
+   android:textColor="@color/orange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+    <LinearLayout
+        android:id="@+id/lin1"
+        android:orientation="vertical"
+        android:layout_below="@+id/text4"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/seller_tax_invoice_number" />
+        <EditText
+            android:drawableRight="@drawable/ic_arrow_drop_down"
+
+            android:background="@drawable/ic_rectangle_border"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40">
+
+        </EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lin2"
+        android:orientation="vertical"
+        android:layout_below="@+id/lin1"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_5"        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/seller_tax_invoice_date" />
+        <EditText
+            android:drawableRight="@drawable/ic_calendar"
+            android:background="@drawable/ic_rectangle_border"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40">
+        </EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lin3"
+        android:orientation="vertical"
+        android:layout_below="@+id/lin2"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_5"        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Billig Address*" />
+        <EditText
+            android:drawableRight="@drawable/ic_arrow_drop_down"
+
+            android:background="@drawable/ic_rectangle_border"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40">
+
+        </EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lin4"
+        android:orientation="vertical"
+        android:layout_below="@+id/lin3"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_5"        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date Of Dispatch*" />
+        <EditText
+            android:background="@drawable/ic_rectangle_border"
+            android:layout_width="match_parent"
+            android:drawableRight="@drawable/ic_calendar"
+            android:layout_height="@dimen/dp_40">
+
+        </EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lin5"
+        android:orientation="vertical"
+        android:layout_below="@+id/lin4"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_5"        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mode Of Dispatch*" />
+        <EditText
+            android:background="@drawable/ic_rectangle_border"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40">
+
+        </EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lin6"
+        android:orientation="vertical"
+        android:layout_below="@+id/lin5"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_5"        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bank_account_number" />
+        <EditText
+            android:drawableRight="@drawable/ic_arrow_drop_down"
+            android:background="@drawable/ic_rectangle_border"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40">
+
+        </EditText>
+    </LinearLayout>
+
+                <include
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:layout_below="@+id/lin6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/fragment_invoice_generated_second_page" />
+</RelativeLayout>
+        </androidx.core.widget.NestedScrollView>
+</RelativeLayout>
+</layout>

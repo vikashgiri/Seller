@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<include
+    layout="@layout/toolbar_dashboard"
+    android:id="@+id/toolbar"></include>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_5"
+            android:textSize="@dimen/sp_12"
+        android:background="@drawable/ic_rectangle_gray_cornor"
+        android:textColor="@color/dark_gray"
+        android:layout_margin="@dimen/dp_10"
+        android:text="@string/_2021_uploading_deliver_fake_or_counterfelt_or_refurbished_project"></TextView>
+<LinearLayout
+    android:id="@+id/lin1"
+    android:layout_below="@+id/description"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/dp_10"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ic_rectangle_gray_cornor">
+    <LinearLayout
+    android:layout_width="match_parent"
+        android:weightSum="2"
+
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_weight="1"
+        android:padding="@dimen/dp_8"
+
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/serverity">
+
+    </TextView>
+        <View
+            android:layout_width="1dp"
+            android:background="@color/dark_gray"
+            android:layout_height="match_parent"></View>
+
+        <TextView
+            android:layout_weight="1"
+android:layout_marginLeft="@dimen/dp_5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Sevete"></TextView>
+    </LinearLayout>
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/dark_gray"></View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="1"
+            android:padding="@dimen/dp_8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/statuus">
+
+        </TextView>
+        <View
+            android:background="@color/dark_gray"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"></View>
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+android:layout_marginLeft="@dimen/dp_5"
+            android:layout_height="wrap_content"
+            android:text="Open"></TextView>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/dark_gray"></View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="2"
+
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:padding="@dimen/dp_5"
+
+            android:layout_height="wrap_content"
+            android:text="@string/order_number">
+
+        </TextView>
+        <View
+            android:background="@color/dark_gray"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"></View>
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/dp_5"
+android:padding="@dimen/dp_5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="GEM 23433RT44"></TextView>
+    </LinearLayout>
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/dark_gray"></View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:layout_margin="@dimen/dp_5"
+
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/invoice_number">
+
+        </TextView>
+        <View
+            android:background="@color/dark_gray"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"></View>
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:padding="@dimen/dp_8"
+            android:layout_height="wrap_content"
+            android:text="11223"></TextView>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/dark_gray"></View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:padding="@dimen/dp_8"
+
+            android:layout_height="wrap_content"
+            android:text="@string/sub_category">
+
+        </TextView>
+        <View
+            android:layout_width="1dp"
+            android:background="@color/dark_gray"
+            android:layout_height="match_parent"></View>
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_marginLeft="@dimen/dp_5"
+android:padding="@dimen/dp_8"
+            android:layout_height="wrap_content"
+            android:text="Laptop"></TextView>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/dark_gray"></View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="2"
+
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:padding="@dimen/dp_8"
+
+            android:layout_height="wrap_content"
+            android:text="@string/issue_raised_by">
+
+        </TextView>
+        <View
+            android:layout_width="1dp"
+            android:background="@color/dark_gray"
+            android:layout_height="match_parent"></View>
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:padding="@dimen/dp_8"
+android:layout_marginLeft="@dimen/dp_5"
+            android:layout_height="wrap_content"
+            android:text="All india radio"></TextView>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/dark_gray"></View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="2"
+
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:padding="@dimen/dp_8"
+
+            android:layout_height="wrap_content"
+            android:text="@string/raised_againt">
+
+        </TextView>
+        <View
+            android:background="@color/dark_gray"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"></View>
+
+        <TextView
+            android:padding="@dimen/dp_8"
+android:layout_marginLeft="@dimen/dp_5"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="N K Jain"></TextView>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/dark_gray"></View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:padding="@dimen/dp_8"
+
+            android:layout_height="wrap_content"
+            android:text="@string/scn_sent">
+
+        </TextView>
+        <View
+            android:layout_width="1dp"
+            android:background="@color/dark_gray"
+            android:layout_height="match_parent"></View>
+
+        <TextView
+            android:layout_weight="1"
+            android:padding="@dimen/dp_8"
+android:layout_marginLeft="@dimen/dp_5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="No"></TextView>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/dark_gray"></View>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:weightSum="2"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:padding="@dimen/dp_8"
+
+        android:layout_height="wrap_content"
+        android:text="@string/description">
+
+    </TextView>
+    <View
+        android:background="@color/dark_gray"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"></View>
+
+    <TextView
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_8"
+android:layout_marginLeft="@dimen/dp_5"
+        android:text="N/A"></TextView>
+</LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/dark_gray"></View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:padding="@dimen/dp_8"
+
+            android:layout_height="wrap_content"
+            android:text="@string/created_on">
+
+        </TextView>
+        <View
+            android:layout_width="1dp"
+android:background="@color/dark_gray"
+            android:layout_height="match_parent"></View>
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:padding="@dimen/dp_8"
+
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_height="wrap_content"
+            android:text="25/12/2020"></TextView>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/dark_gray"></View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"        android:padding="@dimen/dp_8"
+
+            android:layout_height="wrap_content"
+            android:text="@string/no_of_days">
+
+        </TextView>
+        <View
+            android:background="@color/dark_gray"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"></View>
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:padding="@dimen/dp_8"
+android:layout_marginLeft="@dimen/dp_5"
+            android:layout_height="wrap_content"
+            android:text="20 days ago"></TextView>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/dark_gray"></View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"        android:padding="@dimen/dp_8"
+
+            android:layout_height="wrap_content"
+            android:text="@string/last_modified">
+
+        </TextView>
+        <View
+            android:background="@color/dark_gray"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"></View>
+
+        <TextView
+            android:layout_marginLeft="@dimen/dp_5"
+            android:padding="@dimen/dp_8"
+
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="29/10/2020"></TextView>
+    </LinearLayout>
+
+</LinearLayout>
+<LinearLayout
+    android:id="@+id/lin2"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_margin="@dimen/dp_10"
+
+    android:layout_below="@id/lin1"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+    <TextView
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/seller">
+    </TextView>
+        <TextView
+            android:background="@drawable/ic_rectangle_border"
+
+            android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ministry of IT Depar. \n
+N/A\nN\A\nAll india radio">
+
+    </TextView></LinearLayout>
+    <LinearLayout
+        android:layout_weight="1"
+android:layout_marginLeft="@dimen/dp_10"
+        android:layout_width="0dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textStyle="bold"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/buyer"></TextView>
+        <TextView
+    android:layout_weight="1"
+            android:background="@drawable/ic_rectangle_border"
+
+            android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ministry of IT Depar. \n
+N/A\nN\A\nAll india radio">
+
+        </TextView>
+
+    </LinearLayout>
+</LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/dp_10"
+
+            android:layout_below="@+id/lin2"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:background="@drawable/ic_rectangle_orange"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:text="@string/incident_responses"
+                android:padding="@dimen/dp_2"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_height="@dimen/dp_30">
+
+            </TextView>
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:background="@drawable/ic_rectangle_white"
+                android:textColor="@color/black"
+                android:text="@string/attachments"
+android:layout_marginLeft="@dimen/dp_2"
+                android:gravity="center"
+                android:padding="@dimen/dp_5"
+                android:layout_height="@dimen/dp_30">
+
+            </TextView>
+        </LinearLayout>
+        <EditText
+            android:id="@+id/edittext"
+            android:padding="@dimen/dp_5"
+            android:layout_marginLeft="@dimen/dp_10"
+android:layout_marginRight="@dimen/dp_10"
+            android:textSize="@dimen/sp_12"
+            android:gravity="start|top"
+            android:layout_below="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="Buyer closed the incident 26/07/2020\n Test "
+            android:background="@drawable/ic_rectangle_border"></EditText>
+    <RelativeLayout
+        android:layout_margin="@dimen/dp_10"
+        android:background="@color/light_gray"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/edittext"
+        android:layout_height="@dimen/dp_30">
+        <TextView
+            android:textColor="@color/blue"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+           android:text="@string/download_user_manual" ></TextView>
+
+        <TextView
+            android:layout_marginRight="@dimen/dp_5"
+            android:layout_centerVertical="true"
+            android:textColor="@color/blue"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:text="Download GeM Im Policy" ></TextView>
+    </RelativeLayout>
+    </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>
+</layout>

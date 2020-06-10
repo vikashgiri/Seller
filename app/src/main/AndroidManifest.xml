@@ -16,13 +16,7 @@
         tools:ignore="LockedOrientationActivity">
         <activity android:name=".RegisterActivity"></activity>
         <activity
-            android:name=".OrderActivity"
-            android:screenOrientation="portrait" />
-        <activity
             android:name=".MoreWebviewActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".OrderDetailsStatics"
             android:screenOrientation="portrait" />
         <activity
             android:name=".WebViewActivity"

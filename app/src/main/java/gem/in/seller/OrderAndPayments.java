@@ -55,8 +55,14 @@ public class OrderAndPayments extends Fragment {
         binding.orderHistory.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent myIntent = new Intent(getActivity(), OrderActivity.class);
-                getActivity().startActivity(myIntent);
+               /* Intent myIntent = new Intent(getActivity(), OrderActivity.class);
+                getActivity().startActivity(myIntent);*/
+                FragmentTransaction ft2= getActivity().getSupportFragmentManager().beginTransaction();
+
+                InvoiceGeneratedFragment orderStatisticsFragment = new InvoiceGeneratedFragment();
+                ft2.add(R.id.container, orderStatisticsFragment);
+                ft2.addToBackStack(null);
+                ft2.commit();
             }
         });
         View view = binding.getRoot();

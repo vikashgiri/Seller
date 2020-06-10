@@ -117,6 +117,7 @@ app:reverseLayout="true"
                 > </TextView>
         </RelativeLayout>
 <RelativeLayout
+    android:id="@+id/productAndService"
     android:layout_width="0dp"
     android:layout_weight="1"
     android:gravity="center"

@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
 
                         case R.id.bid:
                             FragmentTransaction ft2= getSupportFragmentManager().beginTransaction();
-                            ft2.replace(R.id.container, new DashboardFragment());
+                            ft2.replace(R.id.container, new BidRaHomeFragment());
                                 ft2.commit();
                                 return true;
 

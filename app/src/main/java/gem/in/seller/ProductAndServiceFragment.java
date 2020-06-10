@@ -4,11 +4,9 @@ import android.content.Context;
 import android.graphics.Color;
 import android.os.Bundle;
 
-import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentStatePagerAdapter;
-import androidx.fragment.app.FragmentTransaction;
 import androidx.viewpager.widget.ViewPager;
 
 import android.os.Handler;
@@ -27,39 +25,28 @@ import java.util.List;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class DashboardFragment extends Fragment {
-    private TabLayout tabLayout;
-    public ViewPager viewPager;
-    TextView bid_ra_status;
+public class ProductAndServiceFragment extends Fragment {
 
-    public DashboardFragment() {
+    public ProductAndServiceFragment() {
         // Required empty public constructor
     }
 
-
+    private TabLayout tabLayout;
+    public ViewPager viewPager;
+    TextView bid_ra_status;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_dashboard, container, false);
-
+        View view= inflater.inflate(R.layout.fragment_product_and_service_fragment, container, false);
         TextView title = (TextView) view.findViewById(R.id.title);
-        title.setText("BID/RA");
+        title.setText(R.string.product_and_ervice);
         viewPager = (ViewPager) view.findViewById(R.id.viewpager);
-        viewPager = (ViewPager) view.findViewById(R.id.viewpager);
-        bid_ra_status = (TextView) view.findViewById(R.id.bid_ra_status);
         setupViewPager(viewPager);
-        bid_ra_status.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                FragmentTransaction ft2= getActivity().getSupportFragmentManager().beginTransaction();
-                ft2.add(R.id.container, new BidRaStatusFragment());
-                ft2.addToBackStack(null);
-                ft2.commit();
-            }
-        });
+        tabLayout = (TabLayout) view.findViewById(R.id.tabs);
         tabLayout = (TabLayout) view.findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(viewPager);
+
         new Handler().postDelayed(
                 new Runnable(){
                     @Override
@@ -74,7 +61,7 @@ public class DashboardFragment extends Fragment {
                 View view = tab.getCustomView();
                 TextView tv = (TextView) view.findViewById(R.id.tvtab1);
                 tv.setTextColor(Color.WHITE);
-tv.setBackgroundResource(R.drawable.ic_background_edittext_blue);
+                tv.setBackgroundResource(R.drawable.ic_background_edittext_gray);
             }
 
             @Override
@@ -82,7 +69,7 @@ tv.setBackgroundResource(R.drawable.ic_background_edittext_blue);
                 View view = tab.getCustomView();
                 TextView tv = (TextView) view.findViewById(R.id.tvtab1);
                 tv.setBackgroundResource(0);
-                tv.setTextColor(Color.BLACK);
+                tv.setTextColor(Color.WHITE);
             }
 
             @Override
@@ -91,23 +78,17 @@ tv.setBackgroundResource(R.drawable.ic_background_edittext_blue);
             }
         });
 
-        for (int i = 0; i < 5; i++)
+        for (int i = 0; i < 2; i++)
         {
             View headerView = ((LayoutInflater) getActivity().getSystemService(Context.LAYOUT_INFLATER_SERVICE))
                     .inflate(R.layout.custom_tab, null, false);
             TextView tv = (TextView) headerView.findViewById(R.id.tvtab1);
+            tv.setTextColor(Color.WHITE);
             if (i == 0) {
-                tv.setText("Bid/RA");
+                tv.setText(R.string.catalogue_statistics);
             }
             if (i == 1) {
-                tv.setText("Service");
-            }
-            if (i == 2) {
-                tv.setText("Bunch");
-            }if (i == 3) {
-                tv.setText("Service Bunch");
-            }if (i == 4) {
-                tv.setText("Bid to RAs");
+                tv.setText(R.string.category_wise_liting);
             }
             LinearLayout linearLayoutOne = (LinearLayout) headerView.findViewById(R.id.ll);
             tabLayout.getTabAt(i).setCustomView(linearLayoutOne);
@@ -115,15 +96,13 @@ tv.setBackgroundResource(R.drawable.ic_background_edittext_blue);
 
         return view;
 
-}
+    }
 
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getActivity().getSupportFragmentManager());
-        adapter.addFragment(new BidFragment(), "");
-        adapter.addFragment(new BidRaFragment(), "");
-        adapter.addFragment(new BidRaFragment(), "");
-        adapter.addFragment(new BidRaFragment(), "");
-        adapter.addFragment(new BidRaFragment(), "");
+        adapter.addFragment(new ProductAndServiceCatalogueFragment(), "");
+        adapter.addFragment(new ProductAndServiceCategoryFragment(), "");
+
         viewPager.setAdapter(adapter);
     }
 
@@ -156,5 +135,4 @@ tv.setBackgroundResource(R.drawable.ic_background_edittext_blue);
             return mFragmentTitleList.get(position);
         }
     }
-}
-
+    }

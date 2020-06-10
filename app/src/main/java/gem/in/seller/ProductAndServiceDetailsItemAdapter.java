@@ -4,15 +4,10 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
-import android.widget.TextView;
 
-import androidx.fragment.app.FragmentActivity;
-import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class IncidentDetailsItemAdapter extends RecyclerView.Adapter<IncidentDetailsItemAdapter.ViewHolder>{
+public class ProductAndServiceDetailsItemAdapter extends RecyclerView.Adapter<ProductAndServiceDetailsItemAdapter.ViewHolder>{
 String text[]={"Pending \norder","Pending \nDelivery"};
 String color[]={"#","#"};
 Context context;
@@ -21,11 +16,11 @@ int id[]={R.drawable.pending_order,R.drawable.ic_pending_delivery};
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         LayoutInflater layoutInflater = LayoutInflater.from(parent.getContext());
-        View listItem= layoutInflater.inflate(R.layout.item_incident_details_fragments, parent, false);
+        View listItem= layoutInflater.inflate(R.layout.item_product_and_service_details_fragment, parent, false);
         ViewHolder viewHolder = new ViewHolder(listItem);
         return viewHolder;
     }
-public IncidentDetailsItemAdapter(Context context)
+public ProductAndServiceDetailsItemAdapter(Context context)
 {
     this.context=context;
     this.statuss="kj";
@@ -33,13 +28,6 @@ public IncidentDetailsItemAdapter(Context context)
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
 
-     holder.rel1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                FragmentTransaction ft2= ((FragmentActivity)context).getSupportFragmentManager().beginTransaction();
-                ft2.replace(R.id.container, new IncidentDetailsViewFragment());
-                ft2.commit();            }
-        });
 
     }
 
@@ -50,10 +38,10 @@ public IncidentDetailsItemAdapter(Context context)
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
-RelativeLayout rel1;
+
         public ViewHolder(View itemView) {
             super(itemView);
-            rel1=(RelativeLayout)itemView.findViewById(R.id.rel1);
+
         }
     }
 }

@@ -34,8 +34,8 @@ public class SummaryFragment extends Fragment {
         order.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent myIntent = new Intent(getActivity(), OrderActivity.class);
-                getActivity().startActivity(myIntent);
+                /*Intent myIntent = new Intent(getActivity(), OrderActivity.class);
+                getActivity().startActivity(myIntent);*/
             }
         });
 

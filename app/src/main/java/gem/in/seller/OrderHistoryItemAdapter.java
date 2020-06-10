@@ -1,18 +1,17 @@
 package gem.in.seller;
 
 import android.content.Context;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class IncidentDetailsItemAdapter extends RecyclerView.Adapter<IncidentDetailsItemAdapter.ViewHolder>{
+public class OrderHistoryItemAdapter extends RecyclerView.Adapter<OrderHistoryItemAdapter.ViewHolder>{
 String text[]={"Pending \norder","Pending \nDelivery"};
 String color[]={"#","#"};
 Context context;
@@ -21,25 +20,28 @@ int id[]={R.drawable.pending_order,R.drawable.ic_pending_delivery};
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         LayoutInflater layoutInflater = LayoutInflater.from(parent.getContext());
-        View listItem= layoutInflater.inflate(R.layout.item_incident_details_fragments, parent, false);
+        View listItem= layoutInflater.inflate(R.layout.item_order_history_list, parent, false);
         ViewHolder viewHolder = new ViewHolder(listItem);
         return viewHolder;
     }
-public IncidentDetailsItemAdapter(Context context)
+public OrderHistoryItemAdapter(Context context)
 {
     this.context=context;
     this.statuss="kj";
 }
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
+holder.view_details.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        FragmentTransaction ft2= ((FragmentActivity)context).getSupportFragmentManager().beginTransaction();
 
-     holder.rel1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                FragmentTransaction ft2= ((FragmentActivity)context).getSupportFragmentManager().beginTransaction();
-                ft2.replace(R.id.container, new IncidentDetailsViewFragment());
-                ft2.commit();            }
-        });
+        OrderDetailFragment incidentDetailsFragment = new OrderDetailFragment ();
+        ft2.add(R.id.container, incidentDetailsFragment);
+        ft2.addToBackStack(null);
+        ft2.commit();
+    }
+});
 
     }
 
@@ -50,10 +52,11 @@ public IncidentDetailsItemAdapter(Context context)
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
-RelativeLayout rel1;
+TextView view_details;
         public ViewHolder(View itemView) {
             super(itemView);
-            rel1=(RelativeLayout)itemView.findViewById(R.id.rel1);
+            view_details=(TextView)itemView.findViewById(R.id.view_details);
+
         }
     }
 }
