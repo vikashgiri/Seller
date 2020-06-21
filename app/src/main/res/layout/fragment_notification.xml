@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/white"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include android:id="@+id/toolbar"
+            layout="@layout/toolbar_dashboard"></include>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/colorPrimary"
+            android:padding="@dimen/dp_10"
+            android:text="New product arrived.Please check and allow someone to purchage"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <View
+            android:layout_below="@+id/header"
+            android:background="@color/dark_gray"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            ></View><TextView
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/colorPrimary"
+            android:padding="@dimen/dp_10"
+            android:text="New product arrived.Please check and allow someone to purchage"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <View
+            android:layout_below="@+id/header"
+            android:background="@color/dark_gray"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            ></View><TextView
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/colorPrimary"
+            android:padding="@dimen/dp_10"
+            android:text="New product arrived.Please check and allow someone to purchage"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <View
+            android:layout_below="@+id/header"
+            android:background="@color/dark_gray"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            ></View><TextView
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/colorPrimary"
+            android:padding="@dimen/dp_10"
+            android:text="New product arrived.Please check and allow someone to purchage"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <View
+            android:layout_below="@+id/header"
+            android:background="@color/dark_gray"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            ></View><TextView
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/colorPrimary"
+            android:padding="@dimen/dp_10"
+            android:text="New product arrived.Please check and allow someone to purchage"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <View
+            android:layout_below="@+id/header"
+            android:background="@color/dark_gray"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            ></View><TextView
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/colorPrimary"
+            android:padding="@dimen/dp_10"
+            android:text="New product arrived.Please check and allow someone to purchage"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <View
+            android:layout_below="@+id/header"
+            android:background="@color/dark_gray"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            ></View><TextView
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/colorPrimary"
+            android:padding="@dimen/dp_10"
+            android:text="New product arrived.Please check and allow someone to purchage"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+
+
+    </LinearLayout>
+</layout>
