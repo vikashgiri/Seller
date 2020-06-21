@@ -32,20 +32,22 @@
             android:textColor="@color/white"
     android:text="Ongoing"></TextView>
         <TextView
+            android:id="@+id/bidStats"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:layout_marginLeft="@dimen/dp_8"
+            android:layout_marginLeft="@dimen/dp_10"
             android:textColor="@color/white"
             android:padding="@dimen/dp_5"
             android:text="@string/bid_start">
 
         </TextView>
         <TextView
+            android:id="@+id/participated"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_marginLeft="@dimen/dp_10"
             android:textColor="@color/white"
             android:padding="@dimen/dp_8"
             android:text="@string/participated">
@@ -56,7 +58,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_marginLeft="@dimen/dp_10"
             android:textColor="@color/white"
             android:padding="@dimen/dp_8"
             android:text="@string/bid_ra_status">

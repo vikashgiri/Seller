@@ -38,6 +38,29 @@ public class HomeFragment extends Fragment {
     {
         // Inflate the layout for this fragment
          binding = DataBindingUtil.inflate(inflater, R.layout.fragment_home, container, false);
+         binding.toolbar.account.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View v) {
+                 FragmentTransaction ft2= getActivity().getSupportFragmentManager().beginTransaction();
+                 ft2.replace(R.id.container, new MyAccountFragment());
+                 ft2.commit();
+             }
+         }); binding.toolbar.notification.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View v) {
+                 FragmentTransaction ft2= getActivity().getSupportFragmentManager().beginTransaction();
+                 ft2.replace(R.id.container, new NotificationFragment());
+                 ft2.commit();
+             }
+         }); binding.liveBid.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View v) {
+                 FragmentTransaction ft2= getActivity().getSupportFragmentManager().beginTransaction();
+                 ft2.replace(R.id.container, new BidRaHomeFragment());
+                 ft2.commit();
+             }
+
+         });
         HomeFragmentItemAdapter adapter = new HomeFragmentItemAdapter(getActivity());
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getActivity());
         linearLayoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
@@ -51,6 +74,7 @@ public class HomeFragment extends Fragment {
             public void onClick(View v) {
                 FragmentTransaction ft2= getActivity().getSupportFragmentManager().beginTransaction();
                 ft2.replace(R.id.container, new IncidentStatusFragment());
+                ft2.addToBackStack(null);
                 ft2.commit();
             }
         });  binding.productAndService.setOnClickListener(new View.OnClickListener() {
@@ -58,6 +82,7 @@ public class HomeFragment extends Fragment {
             public void onClick(View v) {
                 FragmentTransaction ft2= getActivity().getSupportFragmentManager().beginTransaction();
                 ft2.replace(R.id.container, new ProductAndServiceFragment());
+                ft2.addToBackStack(null);
                 ft2.commit();
             }
         });

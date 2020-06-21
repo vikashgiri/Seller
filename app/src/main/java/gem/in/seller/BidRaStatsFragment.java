@@ -1,26 +1,23 @@
 package gem.in.seller;
 
 import android.os.Bundle;
-
-import androidx.databinding.DataBindingUtil;
-import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.LinearLayoutManager;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import androidx.databinding.DataBindingUtil;
+import androidx.fragment.app.Fragment;
+
+import gem.in.seller.databinding.FragmentBidRaStatsBinding;
 import gem.in.seller.databinding.FragmentBidRaStatusBinding;
-import gem.in.seller.databinding.FragmentBidRaStatusBindingImpl;
-import gem.in.seller.databinding.FragmentIncidentDetailsBinding;
 
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link BidRaStatusFragment#newInstance} factory method to
+ * Use the {@link BidRaStatsFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class BidRaStatusFragment extends Fragment {
+public class BidRaStatsFragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -30,7 +27,7 @@ public class BidRaStatusFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public BidRaStatusFragment() {
+    public BidRaStatsFragment() {
         // Required empty public constructor
     }
 
@@ -39,14 +36,9 @@ public class BidRaStatusFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         // Inflate the layout for this fragment
-        FragmentBidRaStatusBinding binding = DataBindingUtil.inflate(
-                inflater, R.layout.fragment_bid_ra_status, container, false);
-
-        Bundle b = getArguments();
-
-        String  s = b.getString("type");
-        binding.toolbar.title.setText(s);
-
+        FragmentBidRaStatsBinding binding = DataBindingUtil.inflate(
+                inflater, R.layout.fragment_bid_ra_stats, container, false);
+binding.toolbar.title.setText(R.string.bid_start);
         binding.toolbar.title.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -54,12 +46,6 @@ public class BidRaStatusFragment extends Fragment {
             }
         });
 
-
-        BidRaStatusFragmentItemAdapter adapter = new BidRaStatusFragmentItemAdapter(getActivity());
-        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getActivity());
-        // LinearLayoutManager layoutManager = new LinearLayoutManager(getActivity(), LinearLayoutManager.HORIZONTAL, true);
-        binding.recyclerView.setLayoutManager(linearLayoutManager);
-        binding.recyclerView.setAdapter(adapter);
 
 
         return binding.getRoot();

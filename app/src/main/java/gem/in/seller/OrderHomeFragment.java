@@ -10,6 +10,7 @@ import androidx.fragment.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import gem.in.seller.databinding.FragmentMoreBinding;
 import gem.in.seller.databinding.FragmentOrderAndPaymentsBinding;
@@ -18,9 +19,9 @@ import gem.in.seller.databinding.FragmentOrderAndPaymentsBinding;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class OrderAndPayments extends Fragment {
+public class OrderHomeFragment extends Fragment {
 
-    public OrderAndPayments() {
+    public OrderHomeFragment() {
         // Required empty public constructor
     }
 
@@ -32,6 +33,7 @@ public class OrderAndPayments extends Fragment {
         FragmentOrderAndPaymentsBinding binding = DataBindingUtil.inflate(
                 inflater, R.layout.fragment_order_and_payments, container, false);
   binding.toolbar.title.setText(R.string.order_and_payments);
+        binding.toolbar.backButton.setVisibility(View.GONE);
   binding.paymentStatics.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View v) {
@@ -59,14 +61,32 @@ public class OrderAndPayments extends Fragment {
                 getActivity().startActivity(myIntent);*/
                 FragmentTransaction ft2= getActivity().getSupportFragmentManager().beginTransaction();
 
-                InvoiceGeneratedFragment orderStatisticsFragment = new InvoiceGeneratedFragment();
+                OrderHistoryFragment orderStatisticsFragment = new OrderHistoryFragment();
                 ft2.add(R.id.container, orderStatisticsFragment);
                 ft2.addToBackStack(null);
                 ft2.commit();
             }
+        });  binding.invoice.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                switches(Keys.INVOICE);
+            }
         });
         View view = binding.getRoot();
+
         //here data must be an instance of the class MarsDataProvider
         return view;
+    }
+
+    void switches(String s)
+    {
+        FragmentTransaction ft2= getActivity().getSupportFragmentManager().beginTransaction();
+        Bundle args = new Bundle();
+        args.putString("type",s);
+        OrderStatisticsDetailsFragment orderStatisticsDetailsFragment = new OrderStatisticsDetailsFragment ();
+        orderStatisticsDetailsFragment.setArguments(args);
+        ft2.add(R.id.container, orderStatisticsDetailsFragment);
+        ft2.addToBackStack(null);
+        ft2.commit();
     }
 }

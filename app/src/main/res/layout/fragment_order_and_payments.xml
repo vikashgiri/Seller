@@ -8,7 +8,7 @@
     android:id="@+id/parent"
 
     android:background="@color/colorPrimary"
-    tools:context=".OrderAndPayments">
+    tools:context=".OrderHomeFragment">
     <include
         android:id="@+id/toolbar"
         layout="@layout/toolbar_dashboard">
@@ -126,8 +126,9 @@ android:id="@+id/view"
             android:layout_width="match_parent"
             android:layout_height="0dp">
             <Button
+                android:id="@+id/invoice"
                 android:layout_width="0dp"
-                android:text="@string/order_availability_apcatance"
+                android:text="@string/invoice"
                 android:layout_weight="1"
 
                 android:background="@drawable/ic_rectangle_corner_round"

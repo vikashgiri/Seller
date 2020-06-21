@@ -41,6 +41,14 @@ ViewPager viewPager;
         View view= inflater.inflate(R.layout.fragment_bid_result, container, false);
         TextView title = (TextView) view.findViewById(R.id.title);
         title.setText(R.string.bid_result);
+        title.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getActivity().getSupportFragmentManager().popBackStack();
+            }
+        });
+
+
         viewPager = (ViewPager) view.findViewById(R.id.viewpager);
         viewPager = (ViewPager) view.findViewById(R.id.viewpager);
         setupViewPager(viewPager);

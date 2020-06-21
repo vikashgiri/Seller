@@ -48,7 +48,7 @@ public class IncidentStatusFragment extends Fragment {
                 IncidentDetailsFragment incidentDetailsFragment = new IncidentDetailsFragment ();
                 incidentDetailsFragment.setArguments(args);
 
-                ft2.add(R.id.container, incidentDetailsFragment);
+                ft2.replace(R.id.container, incidentDetailsFragment);
                 ft2.addToBackStack(null);
                 ft2.commit();
             }
@@ -62,7 +62,7 @@ public class IncidentStatusFragment extends Fragment {
                 IncidentDetailsFragment incidentDetailsFragment = new IncidentDetailsFragment ();
                 incidentDetailsFragment.setArguments(args);
 
-                ft2.add(R.id.container, incidentDetailsFragment);
+                ft2.replace(R.id.container, incidentDetailsFragment);
                 ft2.addToBackStack(null);
                 ft2.commit();
             }
@@ -76,7 +76,7 @@ public class IncidentStatusFragment extends Fragment {
                 IncidentDetailsFragment incidentDetailsFragment = new IncidentDetailsFragment ();
                 incidentDetailsFragment.setArguments(args);
 
-                ft2.add(R.id.container, incidentDetailsFragment);
+                ft2.replace(R.id.container, incidentDetailsFragment);
                 ft2.addToBackStack(null);
                 ft2.commit();
             }

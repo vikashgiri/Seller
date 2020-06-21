@@ -47,8 +47,13 @@ public class OrderStatisticsDetailsFragment extends Fragment {
         });
         String  s = b.getString("type");
         binding.toolbar.title.setText(R.string.order_statistics);
+
+        if(s.equalsIgnoreCase(Keys.INVOICE) )
+        {
+            binding.toolbar.title.setText(R.string.invoice);
+        }
 binding.heading.setText(""+s);
-        OrderStatiticsDetailsFragmentItemAdapter adapter = new OrderStatiticsDetailsFragmentItemAdapter(getActivity());
+        OrderStatiticsDetailsFragmentItemAdapter adapter = new OrderStatiticsDetailsFragmentItemAdapter(getActivity(),s);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getActivity());
         // LinearLayoutManager layoutManager = new LinearLayoutManager(getActivity(), LinearLayoutManager.HORIZONTAL, true);
         binding.recyclerView.setLayoutManager(linearLayoutManager);

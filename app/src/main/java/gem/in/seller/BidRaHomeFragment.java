@@ -14,6 +14,7 @@ import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -29,7 +30,7 @@ import java.util.List;
 public class BidRaHomeFragment extends Fragment {
     private TabLayout tabLayout;
     public ViewPager viewPager;
-    TextView bid_ra_status;
+    TextView bid_ra_status,bidStats,participated;
 
     public BidRaHomeFragment() {
         // Required empty public constructor
@@ -43,16 +44,50 @@ public class BidRaHomeFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_bid_ra_home, container, false);
 
         TextView title = (TextView) view.findViewById(R.id.title);
+        ImageView back_button = (ImageView) view.findViewById(R.id.back_button);
+        back_button.setVisibility(View.GONE);
         title.setText("BID/RA");
+        title.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getActivity().getSupportFragmentManager().popBackStack();
+            }
+        });
         viewPager = (ViewPager) view.findViewById(R.id.viewpager);
         viewPager = (ViewPager) view.findViewById(R.id.viewpager);
         bid_ra_status = (TextView) view.findViewById(R.id.bid_ra_status);
+        participated = (TextView) view.findViewById(R.id.participated);
+        bidStats = (TextView) view.findViewById(R.id.bidStats);
         setupViewPager(viewPager);
         bid_ra_status.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 FragmentTransaction ft2= getActivity().getSupportFragmentManager().beginTransaction();
-                ft2.add(R.id.container, new BidRaStatusFragment());
+                Bundle args = new Bundle();
+                args.putString("type","Bid/RA Status");
+                BidRaStatusFragment paymentStatisticsDetailsFragment = new BidRaStatusFragment ();
+                paymentStatisticsDetailsFragment.setArguments(args);
+                ft2.add(R.id.container, paymentStatisticsDetailsFragment);
+                ft2.addToBackStack(null);
+                ft2.commit();
+            }
+        });  bidStats.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentTransaction ft2= getActivity().getSupportFragmentManager().beginTransaction();
+                ft2.add(R.id.container, new BidRaStatsFragment());
+                ft2.addToBackStack(null);
+                ft2.commit();
+            }
+        }); participated.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentTransaction ft2= getActivity().getSupportFragmentManager().beginTransaction();
+                Bundle args = new Bundle();
+                args.putString("type","Participated");
+                BidRaStatusFragment paymentStatisticsDetailsFragment = new BidRaStatusFragment ();
+                paymentStatisticsDetailsFragment.setArguments(args);
+                ft2.add(R.id.container, paymentStatisticsDetailsFragment);
                 ft2.addToBackStack(null);
                 ft2.commit();
             }
@@ -119,10 +154,10 @@ tv.setBackgroundResource(R.drawable.ic_background_edittext_blue);
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getActivity().getSupportFragmentManager());
         adapter.addFragment(new BidFragment(), "");
-        adapter.addFragment(new BidRaFragment(), "");
-        adapter.addFragment(new BidRaFragment(), "");
-        adapter.addFragment(new BidRaFragment(), "");
-        adapter.addFragment(new BidRaFragment(), "");
+        adapter.addFragment(new BidFragment(), "");
+        adapter.addFragment(new BidFragment(), "");
+        adapter.addFragment(new BidFragment(), "");
+        adapter.addFragment(new BidFragment(), "");
         viewPager.setAdapter(adapter);
     }
 

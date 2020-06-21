@@ -65,6 +65,7 @@ android:paddingLeft="@dimen/dp_10"
             android:layout_below="@+id/textView"
             android:layout_width="match_parent"
 app:reverseLayout="true"
+            android:layout_marginRight="@dimen/dp_10"
             android:layout_height="wrap_content" />
 
 
@@ -94,6 +95,7 @@ app:reverseLayout="true"
         android:weightSum="2"
         android:layout_height="0dp">
         <RelativeLayout
+            android:id="@+id/live_Bid"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_margin="@dimen/dp_10"
@@ -131,7 +133,7 @@ app:reverseLayout="true"
             android:layout_width="wrap_content"
             android:gravity="center"
             android:layout_marginTop="@dimen/dp_10"
-            android:text="@string/product_service"
+            android:text="@string/catalogue_nmanagement"
             android:textSize="@dimen/sp_14"
           android:textStyle="bold"
 android:textColor="@color/colorPrimary"
@@ -155,11 +157,11 @@ android:textColor="@color/colorPrimary"
             android:layout_height="match_parent">
 
             <TextView
-                android:drawableTop="@drawable/ic_product_pending"
+                android:drawableTop="@drawable/transaction_charges"
                 android:layout_width="wrap_content"
                 android:gravity="center"
                 android:layout_marginTop="@dimen/dp_10"
-                android:text="@string/product_pending"
+                android:text="Transation \nCharges"
                 android:textSize="@dimen/sp_14"
                 android:textStyle="bold"
                 android:textColor="@color/colorPrimary"

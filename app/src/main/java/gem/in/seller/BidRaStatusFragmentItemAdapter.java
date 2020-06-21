@@ -32,6 +32,7 @@ holder.viewButton.setOnClickListener(new View.OnClickListener()
     public void onClick(View v) {
         FragmentTransaction ft2= ((FragmentActivity)context).getSupportFragmentManager().beginTransaction();
         ft2.replace(R.id.container, new BidResultFragment());
+        ft2.addToBackStack(null);
         ft2.commit();
     }
 });

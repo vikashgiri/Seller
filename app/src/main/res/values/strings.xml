@@ -47,7 +47,7 @@
     <string name="incident">Incident</string>
     <string name="live_bid">Live Bid</string>
     <string name="participated">Participated</string>
-    <string name="bid_ra_status">Bid/RA status</string>
+    <string name="bid_ra_status">Bid/RA Status</string>
     <string name="payment_status">Payment Status</string>
     <string name="payment_completed">Payment Completed</string>
     <string name="payment_pending">Payment pending</string>
@@ -205,4 +205,12 @@
     <string name="attachments">Attachments</string>
     <string name="download_user_manual">Download User Manual</string>
     <string name="incidet_detaiils">incident Details</string>
+    <string name="company_profile">Company Profile</string>
+    <string name="business_organisation_ntype">Business/Organisation \nType</string>
+    <string name="business_organisation_nname">Business/Organisation \nName</string>
+    <string name="notification">Notification</string>
+    <string name="catalogue_nmanagement">Catalogue \nManagement</string>
+    <string name="invoice">Invoices</string>
+    <string name="order_placed">Order Placed</string>
+    <string name="accept">Accept</string>
 </resources>

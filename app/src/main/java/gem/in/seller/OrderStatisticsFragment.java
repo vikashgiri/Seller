@@ -34,7 +34,12 @@ public class OrderStatisticsFragment extends Fragment {
          binding.accepted.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                switches(getActivity().getResources().getString(R.string.order_accepted));
+                switches(Keys.ACCEPTED);
+            }
+        });  binding.placed.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                switches(Keys.ORDER_PLACED);
             }
         });      binding.cancelled.setOnClickListener(new View.OnClickListener() {
             @Override

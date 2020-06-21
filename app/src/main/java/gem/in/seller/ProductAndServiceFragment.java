@@ -40,7 +40,13 @@ public class ProductAndServiceFragment extends Fragment {
         // Inflate the layout for this fragment
         View view= inflater.inflate(R.layout.fragment_product_and_service_fragment, container, false);
         TextView title = (TextView) view.findViewById(R.id.title);
-        title.setText(R.string.product_and_ervice);
+        title.setText(R.string.catalogue_nmanagement);
+        title.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getActivity().getSupportFragmentManager().popBackStack();
+            }
+        });
         viewPager = (ViewPager) view.findViewById(R.id.viewpager);
         setupViewPager(viewPager);
         tabLayout = (TabLayout) view.findViewById(R.id.tabs);

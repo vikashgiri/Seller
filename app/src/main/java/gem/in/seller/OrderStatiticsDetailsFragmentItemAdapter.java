@@ -1,10 +1,14 @@
 package gem.in.seller;
 
 import android.content.Context;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
+import androidx.fragment.app.FragmentActivity;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.RecyclerView;
 
 public class OrderStatiticsDetailsFragmentItemAdapter extends RecyclerView.Adapter<OrderStatiticsDetailsFragmentItemAdapter.ViewHolder>{
@@ -20,7 +24,7 @@ int id[]={R.drawable.pending_order,R.drawable.ic_pending_delivery};
         ViewHolder viewHolder = new ViewHolder(listItem);
         return viewHolder;
     }
-public OrderStatiticsDetailsFragmentItemAdapter(Context context)
+public OrderStatiticsDetailsFragmentItemAdapter(Context context,String status)
 {
     this.context=context;
     this.status=status;
@@ -28,7 +32,26 @@ public OrderStatiticsDetailsFragmentItemAdapter(Context context)
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
 
+if(status.equalsIgnoreCase(Keys.ACCEPTED) || status.equalsIgnoreCase(Keys.INVOICE) )
+{
+    holder.generate_invoice.setVisibility(View.VISIBLE);
+}
+        if(status.equalsIgnoreCase(Keys.ACCEPTANCE) || status.equalsIgnoreCase(Keys.ORDER_PLACED))
+        {
+            holder.generate_invoice.setVisibility(View.VISIBLE);
+            holder.generate_invoice.setText(R.string.accept);
+        }
+holder.generate_invoice.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        FragmentTransaction ft2= ((FragmentActivity)context).getSupportFragmentManager().beginTransaction();
 
+        InvoiceGeneratedFragment invoiceGeneratedFragment = new InvoiceGeneratedFragment ();
+        ft2.add(R.id.container, invoiceGeneratedFragment);
+        ft2.addToBackStack(null);
+        ft2.commit();
+    }
+});
     }
 
 
@@ -38,9 +61,10 @@ public OrderStatiticsDetailsFragmentItemAdapter(Context context)
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
-
+TextView generate_invoice;
         public ViewHolder(View itemView) {
             super(itemView);
+            generate_invoice=(TextView)itemView.findViewById(R.id.generate_invoice);
 
         }
     }

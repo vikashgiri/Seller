@@ -7,6 +7,7 @@
     android:layout_height="@dimen/dp_60">
 
     <ImageView
+        android:id="@+id/notification"
         android:layout_width="@dimen/dp_25"
         android:layout_height="@dimen/dp_25"
         android:layout_alignParentRight="true"
@@ -14,6 +15,7 @@
         android:layout_centerVertical="true"
         android:src="@drawable/ic_notifications" />
     <ImageView
+        android:id="@+id/account"
         android:layout_width="@dimen/dp_25"
         android:layout_alignParentLeft="true"
         android:layout_centerVertical="true"

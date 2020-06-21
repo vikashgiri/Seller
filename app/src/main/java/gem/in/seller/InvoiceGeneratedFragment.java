@@ -8,7 +8,6 @@ import android.view.ViewGroup;
 import androidx.databinding.DataBindingUtil;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
-
 import gem.in.seller.databinding.FragmentInvoceGenerateBinding;
 import gem.in.seller.databinding.FragmentProductAndServiceCatalogBinding;
 
@@ -18,21 +17,29 @@ import gem.in.seller.databinding.FragmentProductAndServiceCatalogBinding;
  */
 public class InvoiceGeneratedFragment extends Fragment {
 
-    public InvoiceGeneratedFragment() {
+    public InvoiceGeneratedFragment()
+    {
         // Required empty public constructor
     }
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+                             Bundle savedInstanceState)
+    {
         // Inflate the layout for this fragment
         FragmentInvoceGenerateBinding binding = DataBindingUtil.inflate(
                 inflater, R.layout.fragment_invoce_generate, container, false);
         binding.toolbar.title.setText(R.string.generate_invoice);
         View view = binding.getRoot();
+        binding.toolbar.title.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getActivity().getSupportFragmentManager().popBackStack();
+            }
+        });
+
         //here data must be an instance of the class MarsDataProvider
         return view;
     }
-
 }

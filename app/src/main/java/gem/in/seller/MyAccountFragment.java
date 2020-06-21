@@ -7,17 +7,17 @@ import android.view.ViewGroup;
 
 import androidx.databinding.DataBindingUtil;
 import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.LinearLayoutManager;
 
-import gem.in.seller.databinding.FragmentBidRaStatusBinding;
+import gem.in.seller.databinding.FragmentBidRaStatsBinding;
+import gem.in.seller.databinding.FragmentMyAccountBinding;
 
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link BidRaGraphFragment#newInstance} factory method to
+ * Use the {@link MyAccountFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class BidRaGraphFragment extends Fragment {
+public class MyAccountFragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -27,7 +27,7 @@ public class BidRaGraphFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public BidRaGraphFragment() {
+    public MyAccountFragment() {
         // Required empty public constructor
     }
 
@@ -36,12 +36,9 @@ public class BidRaGraphFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         // Inflate the layout for this fragment
-        FragmentBidRaStatusBinding binding = DataBindingUtil.inflate(
-                inflater, R.layout.fragment_bid_ra_graph, container, false);
-
-
-
-
+        FragmentMyAccountBinding binding = DataBindingUtil.inflate(
+                inflater, R.layout.fragment_my_account, container, false);
+        binding.toolbar.title.setText("My Account");
         return binding.getRoot();
     }
 }

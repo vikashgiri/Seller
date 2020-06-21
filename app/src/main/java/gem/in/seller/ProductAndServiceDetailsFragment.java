@@ -23,7 +23,6 @@ public class ProductAndServiceDetailsFragment extends Fragment {
         // Required empty public constructor
     }
 
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -31,7 +30,7 @@ public class ProductAndServiceDetailsFragment extends Fragment {
         FragmentProductAndServiceDetailsBinding binding = DataBindingUtil.inflate(
                 inflater, R.layout.fragment_product_and_service_details, container, false);
 
-        binding.toolbar.title.setText(R.string.product_and_ervice);
+        binding.toolbar.title.setText(R.string.catalogue_nmanagement);
 
         Bundle b = getArguments();
 
@@ -46,12 +45,11 @@ public class ProductAndServiceDetailsFragment extends Fragment {
 
 
 
-        IncidentDetailsItemAdapter adapter = new IncidentDetailsItemAdapter(getActivity());
+        ProductAndServiceDetailsItemAdapter adapter = new ProductAndServiceDetailsItemAdapter(getActivity());
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getActivity());
         // LinearLayoutManager layoutManager = new LinearLayoutManager(getActivity(), LinearLayoutManager.HORIZONTAL, true);
         binding.recyclerView.setLayoutManager(linearLayoutManager);
         binding.recyclerView.setAdapter(adapter);
-
 
         return binding.getRoot();
     }

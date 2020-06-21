@@ -31,6 +31,12 @@ public class IncidentDetailsViewFragment extends Fragment {
                 inflater, R.layout.fragment_incident_details_view, container, false);
 binding.toolbar.title.setText(R.string.incidet_detaiils);
         View view = binding.getRoot();
+        binding.toolbar.title.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getActivity().getSupportFragmentManager().popBackStack();
+            }
+        });
 
         return  view;
     }

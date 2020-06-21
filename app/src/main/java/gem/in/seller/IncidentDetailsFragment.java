@@ -45,7 +45,7 @@ public class IncidentDetailsFragment extends Fragment {
 
         binding.toolbar.title.setText(R.string.incident);
 
-        IncidentDetailsItemAdapter adapter = new IncidentDetailsItemAdapter(getActivity());
+        IncidentDetailsItemAdapter adapter = new IncidentDetailsItemAdapter(getActivity(),true);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getActivity());
         // LinearLayoutManager layoutManager = new LinearLayoutManager(getActivity(), LinearLayoutManager.HORIZONTAL, true);
         binding.recyclerView.setLayoutManager(linearLayoutManager);

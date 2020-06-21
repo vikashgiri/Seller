@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
 
                         case R.id.order:
                                 FragmentTransaction ft1 = getSupportFragmentManager().beginTransaction();
-                                ft1.add(R.id.container, new OrderAndPayments());
+                                ft1.add(R.id.container, new OrderHomeFragment());
                                 ft1.addToBackStack(null);
                                 ft1.commit();
                                 return true;

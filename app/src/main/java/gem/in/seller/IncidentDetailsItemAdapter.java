@@ -16,7 +16,7 @@ public class IncidentDetailsItemAdapter extends RecyclerView.Adapter<IncidentDet
 String text[]={"Pending \norder","Pending \nDelivery"};
 String color[]={"#","#"};
 Context context;
-String statuss;
+boolean statuss;
 int id[]={R.drawable.pending_order,R.drawable.ic_pending_delivery};
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
@@ -25,20 +25,26 @@ int id[]={R.drawable.pending_order,R.drawable.ic_pending_delivery};
         ViewHolder viewHolder = new ViewHolder(listItem);
         return viewHolder;
     }
-public IncidentDetailsItemAdapter(Context context)
+public IncidentDetailsItemAdapter(Context context,Boolean b)
 {
     this.context=context;
-    this.statuss="kj";
+    this.statuss=b;
 }
     @Override
-    public void onBindViewHolder(ViewHolder holder, int position) {
-
+    public void onBindViewHolder(final ViewHolder holder, int position) {
+if(!statuss)
+{holder.bid_id.setText("Order Id: GEM/2020/B/65228");
+}
      holder.rel1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                FragmentTransaction ft2= ((FragmentActivity)context).getSupportFragmentManager().beginTransaction();
-                ft2.replace(R.id.container, new IncidentDetailsViewFragment());
-                ft2.commit();            }
+                if(statuss) {
+
+                    FragmentTransaction ft2 = ((FragmentActivity) context).getSupportFragmentManager().beginTransaction();
+                    ft2.replace(R.id.container, new IncidentDetailsViewFragment());
+                    ft2.commit();
+                }
+            }
         });
 
     }
@@ -51,9 +57,11 @@ public IncidentDetailsItemAdapter(Context context)
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
 RelativeLayout rel1;
+TextView bid_id;
         public ViewHolder(View itemView) {
             super(itemView);
             rel1=(RelativeLayout)itemView.findViewById(R.id.rel1);
+            bid_id=(TextView) itemView.findViewById(R.id.bid_id);
         }
     }
 }
